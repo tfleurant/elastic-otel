@@ -1,0 +1,33 @@
+receivers:
+  otlp:
+    protocols:
+      grpc:
+        endpoint: '0.0.0.0:55680'
+      http:
+        endpoint: '0.0.0.0:55681'
+processors:
+  batch:
+    timeout: 10s
+exporters:
+  otlp/elastic:
+    endpoint: ${ES_APM_ENDPOINT}
+    headers:
+      Authorization: ${ES_APM_BEARER_TOKEN}
+    tls:
+      insecure: true
+  logging:
+    loglevel: debug
+service:
+  pipelines:
+    metrics:
+      receivers: [otlp]
+      processors: [batch]
+      exporters: ['otlp/elastic']
+    traces:
+      receivers: [otlp]
+      processors: [batch]
+      exporters: ['otlp/elastic']
+    logs:
+      receivers: [otlp]
+      processors: [batch]
+      exporters: ['otlp/elastic']

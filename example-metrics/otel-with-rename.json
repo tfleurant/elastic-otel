@@ -1,0 +1,214 @@
+{
+  "_index": ".ds-metrics-apm.app.app_otel_elastic-default-2023.02.05-000001",
+  "_id": "BMORIoYBH9e62atg6-GU",
+  "_version": 1,
+  "_score": 0,
+  "_source": {
+    "container": {
+      "id": "5169d0fa5db35c2b004a3664ed7cdd3ed0d51c8d50c0e14f4cea2210bb8deae9"
+    },
+    "process": {
+      "pid": 7,
+      "command_line": "/opt/java/openjdk/bin/java --enable-preview -javaagent:thirdparty/opentelemetry-javaagent.jar",
+      "executable": "/opt/java/openjdk/bin/java"
+    },
+    "agent": {
+      "name": "opentelemetry/java",
+      "version": "1.22.0"
+    },
+    "jvm.memory.committed": 7077888,
+    "data_stream.namespace": "default",
+    "processor": {
+      "name": "metric",
+      "event": "metric"
+    },
+    "data_stream.type": "metrics",
+    "jvm.memory.usage": 6861224,
+    "labels": {
+      "process_runtime_description": "Eclipse Adoptium OpenJDK 64-Bit Server VM 17.0.6+10",
+      "pool": "Compressed Class Space",
+      "type": "non_heap",
+      "telemetry_auto_version": "1.22.1"
+    },
+    "metricset.name": "app",
+    "observer": {
+      "hostname": "e61e7cd41fdb",
+      "type": "apm-server",
+      "version": "8.6.0"
+    },
+    "@timestamp": "2023-02-05T17:13:43.195Z",
+    "jvm.memory.init": 0,
+    "service": {
+      "node": {
+        "name": "5169d0fa5db35c2b004a3664ed7cdd3ed0d51c8d50c0e14f4cea2210bb8deae9"
+      },
+      "environment": "production",
+      "name": "app-otel-elastic",
+      "runtime": {
+        "name": "OpenJDK Runtime Environment",
+        "version": "17.0.6+10"
+      },
+      "language": {
+        "name": "java"
+      },
+      "version": "0.0.1"
+    },
+    "process.runtime.jvm.memory.init": 0,
+    "data_stream.dataset": "apm.app.app_otel_elastic",
+    "jvm.memory.limit": 1073741824,
+    "process.runtime.jvm.memory.limit": 1073741824,
+    "host": {
+      "hostname": "5169d0fa5db3",
+      "os": {
+        "type": "linux",
+        "platform": "linux",
+        "full": "Linux 5.19.0-29-generic"
+      },
+      "name": "5169d0fa5db3",
+      "architecture": "amd64"
+    },
+    "event": {
+      "agent_id_status": "missing",
+      "ingested": "2023-02-05T17:13:53Z"
+    },
+    "process.runtime.jvm.memory.usage": 6861224,
+    "process.runtime.jvm.memory.committed": 7077888
+  },
+  "fields": {
+    "host.os.full.text": [
+      "Linux 5.19.0-29-generic"
+    ],
+    "labels.process_runtime_description": [
+      "Eclipse Adoptium OpenJDK 64-Bit Server VM 17.0.6+10"
+    ],
+    "host.os.full": [
+      "Linux 5.19.0-29-generic"
+    ],
+    "service.node.name": [
+      "5169d0fa5db35c2b004a3664ed7cdd3ed0d51c8d50c0e14f4cea2210bb8deae9"
+    ],
+    "host.hostname": [
+      "5169d0fa5db3"
+    ],
+    "process.pid": [
+      7
+    ],
+    "service.language.name": [
+      "java"
+    ],
+    "container.id": [
+      "5169d0fa5db35c2b004a3664ed7cdd3ed0d51c8d50c0e14f4cea2210bb8deae9"
+    ],
+    "labels.telemetry_auto_version": [
+      "1.22.1"
+    ],
+    "process.runtime.jvm.memory.init": [
+      0
+    ],
+    "processor.event": [
+      "metric"
+    ],
+    "labels.pool": [
+      "Compressed Class Space"
+    ],
+    "process.runtime.jvm.memory.limit": [
+      1073741824
+    ],
+    "agent.name": [
+      "opentelemetry/java"
+    ],
+    "host.name": [
+      "5169d0fa5db3"
+    ],
+    "event.agent_id_status": [
+      "missing"
+    ],
+    "process.runtime.jvm.memory.committed": [
+      7077888
+    ],
+    "process.executable": [
+      "/opt/java/openjdk/bin/java"
+    ],
+    "service.environment": [
+      "production"
+    ],
+    "jvm.memory.committed": [
+      7077888
+    ],
+    "service.name": [
+      "app-otel-elastic"
+    ],
+    "host.os.type": [
+      "linux"
+    ],
+    "data_stream.namespace": [
+      "default"
+    ],
+    "processor.name": [
+      "metric"
+    ],
+    "service.runtime.name": [
+      "OpenJDK Runtime Environment"
+    ],
+    "service.runtime.version": [
+      "17.0.6+10"
+    ],
+    "data_stream.type": [
+      "metrics"
+    ],
+    "observer.hostname": [
+      "e61e7cd41fdb"
+    ],
+    "jvm.memory.usage": [
+      6861224
+    ],
+    "metricset.name": [
+      "app"
+    ],
+    "host.architecture": [
+      "amd64"
+    ],
+    "event.ingested": [
+      "2023-02-05T17:13:53.000Z"
+    ],
+    "@timestamp": [
+      "2023-02-05T17:13:43.195Z"
+    ],
+    "jvm.memory.init": [
+      0
+    ],
+    "service.version": [
+      "0.0.1"
+    ],
+    "observer.version": [
+      "8.6.0"
+    ],
+    "ecs.version": [
+      "8.6.0-dev"
+    ],
+    "host.os.platform": [
+      "linux"
+    ],
+    "observer.type": [
+      "apm-server"
+    ],
+    "data_stream.dataset": [
+      "apm.app.app_otel_elastic"
+    ],
+    "jvm.memory.limit": [
+      1073741824
+    ],
+    "process.command_line": [
+      "/opt/java/openjdk/bin/java --enable-preview -javaagent:thirdparty/opentelemetry-javaagent.jar"
+    ],
+    "agent.version": [
+      "1.22.0"
+    ],
+    "labels.type": [
+      "non_heap"
+    ],
+    "process.runtime.jvm.memory.usage": [
+      6861224
+    ]
+  }
+}

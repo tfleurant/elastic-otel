@@ -1,0 +1,47 @@
+services:
+  ########################
+  ## Base app with both Elastic and Opentelemetry Java Agents, without additional configuration
+  ########################
+  app-basic:
+    image: elastic-otel/app:latest
+    volumes:
+      - './configs/jvm-elastic.yaml:/thirdparty/jvm-elastic.yaml'
+    ports:
+      - 8080:8080
+      - 9999:9999
+    environment:
+      ELASTIC_APM_SECRET_TOKEN: ${ES_APM_TOKEN}
+      OTEL_TRACES_EXPORTER: otlp
+      OTEL_METRICS_EXPORTER: otlp
+      OTEL_LOGS_EXPORTER: otlp
+      OTEL_RESOURCE_ATTRIBUTES: service.name=app-through-otel,deployment.environment=local,service.version=0.0.1
+      JAVA_TOOL_OPTIONS: ${BASE_JAVA_TOOL_OPTIONS} -javaagent:thirdparty/opentelemetry-javaagent.jar
+      OTEL_EXPORTER_OTLP_ENDPOINT: http://otel-collector:55680
+
+  ########################
+  ## App with both Elastic and Opentelemetry Java Agents, with jmx yaml config loaded
+  ########################
+  app-jmx-config:
+    extends:
+      service: app-basic
+    environment:
+      JAVA_TOOL_OPTIONS: ${BASE_JAVA_TOOL_OPTIONS} -javaagent:thirdparty/opentelemetry-javaagent.jar
+      OTEL_JMX_CONFIG: /thirdparty/jvm-elastic.yaml
+
+  ########################
+  ## App with both Elastic and Opentelemetry Java Agents, with custom extension
+  ########################
+  app-opentelemetry-extension:
+    extends:
+      service: app-basic
+    environment:
+      JAVA_TOOL_OPTIONS: ${BASE_JAVA_TOOL_OPTIONS} -javaagent:thirdparty/opentelemetry-javaagent.jar -Dotel.javaagent.extensions=thirdparty/jmx-extension.jar
+
+  ########################
+  ## App with Elastic Java Agent and custom Opentelemetry distro
+  ########################
+  app-opentelemetry-custom-distro:
+    extends:
+      service: app-basic
+    environment:
+      JAVA_TOOL_OPTIONS: ${BASE_JAVA_TOOL_OPTIONS} -javaagent:thirdparty/agent-distro.jar

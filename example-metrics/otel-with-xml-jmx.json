@@ -1,0 +1,1755 @@
+{
+  "resourceMetrics": [
+    {
+      "resource": {
+        "attributes":   [
+          {
+            "key": "container.id",
+            "value": {
+              "stringValue": "f89256afff87b0f41a30d6309096391b9555743741e468273849c510b2571457"
+            }
+          },
+          {
+            "key": "deployment.environment",
+            "value": {
+              "stringValue": "production"
+            }
+          },
+          {
+            "key": "host.arch",
+            "value": {
+              "stringValue": "amd64"
+            }
+          },
+          {
+            "key": "host.name",
+            "value": {
+              "stringValue": "f89256afff87"
+            }
+          },
+          {
+            "key": "os.description",
+            "value": {
+              "stringValue": "Linux 5.19.0-29-generic"
+            }
+          },
+          {
+            "key": "os.type",
+            "value": {
+              "stringValue": "linux"
+            }
+          },
+          {
+            "key": "process.command_line",
+            "value": {
+              "stringValue": "/opt/java/openjdk/bin/java -Dotel.javaagent.debug=true -Dotel.jmx.config=/thirdparty/jvm-elastic.yaml -Dcom.sun.management.jmxremote -Dspring.jmx.enabled=true -Dspring.liveBeansView.mbeanDomain -Dspring.application.admin.enabled=true -Dmanagement.endpoints.jmx.exposure.include=* --enable-preview -javaagent:thirdparty/opentelemetry-javaagent.jar"
+            }
+          },
+          {
+            "key": "process.executable.path",
+            "value": {
+              "stringValue": "/opt/java/openjdk/bin/java"
+            }
+          },
+          {
+            "key": "process.pid",
+            "value": {
+              "intValue": "1"
+            }
+          },
+          {
+            "key": "process.runtime.description",
+            "value": {
+              "stringValue": "Eclipse Adoptium OpenJDK 64-Bit Server VM 17.0.6+10"
+            }
+          },
+          {
+            "key": "process.runtime.name",
+            "value": {
+              "stringValue": "OpenJDK Runtime Environment"
+            }
+          },
+          {
+            "key": "process.runtime.version",
+            "value": {
+              "stringValue": "17.0.6+10"
+            }
+          },
+          {
+            "key": "service.name",
+            "value": {
+              "stringValue": "app-otel-3"
+            }
+          },
+          {
+            "key": "service.version",
+            "value": {
+              "stringValue": "0.0.1"
+            }
+          },
+          {
+            "key": "telemetry.auto.version",
+            "value": {
+              "stringValue": "1.22.1"
+            }
+          },
+          {
+            "key": "telemetry.sdk.language",
+            "value": {
+              "stringValue": "java"
+            }
+          },
+          {
+            "key": "telemetry.sdk.name",
+            "value": {
+              "stringValue": "opentelemetry"
+            }
+          },
+          {
+            "key": "telemetry.sdk.version",
+            "value": {
+              "stringValue": "1.22.0"
+            }
+          }
+        ]
+      },
+      "scopeMetrics": [
+        {
+          "scope": {
+            "name": "io.opentelemetry.sdk.trace"
+          },
+          "metrics": [
+            {
+              "name": "queueSize",
+              "description": "The number of spans queued",
+              "unit": "1",
+              "gauge": {
+                "dataPoints": [
+                  {
+                    "attributes": [
+                      {
+                        "key": "spanProcessorType",
+                        "value": {
+                          "stringValue": "BatchSpanProcessor"
+                        }
+                      }
+                    ],
+                    "startTimeUnixNano": "1676198991085130499",
+                    "timeUnixNano": "1676200131089555764",
+                    "asInt": "0"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "scope": {
+            "name": "io.opentelemetry.runtime-metrics",
+            "version": "1.22.1-alpha"
+          },
+          "metrics": [
+            {
+              "name": "process.runtime.jvm.memory.limit",
+              "description": "Measure of max obtainable memory",
+              "unit": "By",
+              "sum": {
+                "dataPoints": [
+                  {
+                    "attributes": [
+                      {
+                        "key": "pool",
+                        "value": {
+                          "stringValue": "CodeHeap 'profiled nmethods'"
+                        }
+                      },
+                      {
+                        "key": "type",
+                        "value": {
+                          "stringValue": "non_heap"
+                        }
+                      }
+                    ],
+                    "startTimeUnixNano": "1676198991085130499",
+                    "timeUnixNano": "1676200131089555764",
+                    "asInt": "122908672"
+                  },
+                  {
+                    "attributes": [
+                      {
+                        "key": "pool",
+                        "value": {
+                          "stringValue": "CodeHeap 'non-nmethods'"
+                        }
+                      },
+                      {
+                        "key": "type",
+                        "value": {
+                          "stringValue": "non_heap"
+                        }
+                      }
+                    ],
+                    "startTimeUnixNano": "1676198991085130499",
+                    "timeUnixNano": "1676200131089555764",
+                    "asInt": "5840896"
+                  },
+                  {
+                    "attributes": [
+                      {
+                        "key": "pool",
+                        "value": {
+                          "stringValue": "Compressed Class Space"
+                        }
+                      },
+                      {
+                        "key": "type",
+                        "value": {
+                          "stringValue": "non_heap"
+                        }
+                      }
+                    ],
+                    "startTimeUnixNano": "1676198991085130499",
+                    "timeUnixNano": "1676200131089555764",
+                    "asInt": "1073741824"
+                  },
+                  {
+                    "attributes": [
+                      {
+                        "key": "pool",
+                        "value": {
+                          "stringValue": "CodeHeap 'non-profiled nmethods'"
+                        }
+                      },
+                      {
+                        "key": "type",
+                        "value": {
+                          "stringValue": "non_heap"
+                        }
+                      }
+                    ],
+                    "startTimeUnixNano": "1676198991085130499",
+                    "timeUnixNano": "1676200131089555764",
+                    "asInt": "122908672"
+                  },
+                  {
+                    "attributes": [
+                      {
+                        "key": "pool",
+                        "value": {
+                          "stringValue": "G1 Old Gen"
+                        }
+                      },
+                      {
+                        "key": "type",
+                        "value": {
+                          "stringValue": "heap"
+                        }
+                      }
+                    ],
+                    "startTimeUnixNano": "1676198991085130499",
+                    "timeUnixNano": "1676200131089555764",
+                    "asInt": "4127195136"
+                  }
+                ],
+                "aggregationTemporality": 2
+              }
+            },
+            {
+              "name": "process.runtime.jvm.gc.duration",
+              "description": "Duration of JVM garbage collection actions",
+              "unit": "ms",
+              "histogram": {
+                "dataPoints": [
+                  {
+                    "attributes": [
+                      {
+                        "key": "action",
+                        "value": {
+                          "stringValue": "end of minor GC"
+                        }
+                      },
+                      {
+                        "key": "gc",
+                        "value": {
+                          "stringValue": "G1 Young Generation"
+                        }
+                      }
+                    ],
+                    "startTimeUnixNano": "1676198991085130499",
+                    "timeUnixNano": "1676200131089555764",
+                    "count": "12",
+                    "sum": 35,
+                    "bucketCounts": [
+                      "0",
+                      "12",
+                      "0",
+                      "0",
+                      "0",
+                      "0",
+                      "0",
+                      "0",
+                      "0",
+                      "0",
+                      "0",
+                      "0",
+                      "0",
+                      "0",
+                      "0",
+                      "0"
+                    ],
+                    "explicitBounds": [
+                      0,
+                      5,
+                      10,
+                      25,
+                      50,
+                      75,
+                      100,
+                      250,
+                      500,
+                      750,
+                      1000,
+                      2500,
+                      5000,
+                      7500,
+                      10000
+                    ],
+                    "min": 2,
+                    "max": 4
+                  }
+                ],
+                "aggregationTemporality": 2
+              }
+            },
+            {
+              "name": "process.runtime.jvm.memory.init",
+              "description": "Measure of initial memory requested",
+              "unit": "By",
+              "sum": {
+                "dataPoints": [
+                  {
+                    "attributes": [
+                      {
+                        "key": "pool",
+                        "value": {
+                          "stringValue": "CodeHeap 'profiled nmethods'"
+                        }
+                      },
+                      {
+                        "key": "type",
+                        "value": {
+                          "stringValue": "non_heap"
+                        }
+                      }
+                    ],
+                    "startTimeUnixNano": "1676198991085130499",
+                    "timeUnixNano": "1676200131089555764",
+                    "asInt": "2555904"
+                  },
+                  {
+                    "attributes": [
+                      {
+                        "key": "pool",
+                        "value": {
+                          "stringValue": "CodeHeap 'non-nmethods'"
+                        }
+                      },
+                      {
+                        "key": "type",
+                        "value": {
+                          "stringValue": "non_heap"
+                        }
+                      }
+                    ],
+                    "startTimeUnixNano": "1676198991085130499",
+                    "timeUnixNano": "1676200131089555764",
+                    "asInt": "2555904"
+                  },
+                  {
+                    "attributes": [
+                      {
+                        "key": "pool",
+                        "value": {
+                          "stringValue": "Compressed Class Space"
+                        }
+                      },
+                      {
+                        "key": "type",
+                        "value": {
+                          "stringValue": "non_heap"
+                        }
+                      }
+                    ],
+                    "startTimeUnixNano": "1676198991085130499",
+                    "timeUnixNano": "1676200131089555764",
+                    "asInt": "0"
+                  },
+                  {
+                    "attributes": [
+                      {
+                        "key": "pool",
+                        "value": {
+                          "stringValue": "CodeHeap 'non-profiled nmethods'"
+                        }
+                      },
+                      {
+                        "key": "type",
+                        "value": {
+                          "stringValue": "non_heap"
+                        }
+                      }
+                    ],
+                    "startTimeUnixNano": "1676198991085130499",
+                    "timeUnixNano": "1676200131089555764",
+                    "asInt": "2555904"
+                  },
+                  {
+                    "attributes": [
+                      {
+                        "key": "pool",
+                        "value": {
+                          "stringValue": "G1 Survivor Space"
+                        }
+                      },
+                      {
+                        "key": "type",
+                        "value": {
+                          "stringValue": "heap"
+                        }
+                      }
+                    ],
+                    "startTimeUnixNano": "1676198991085130499",
+                    "timeUnixNano": "1676200131089555764",
+                    "asInt": "0"
+                  },
+                  {
+                    "attributes": [
+                      {
+                        "key": "pool",
+                        "value": {
+                          "stringValue": "Metaspace"
+                        }
+                      },
+                      {
+                        "key": "type",
+                        "value": {
+                          "stringValue": "non_heap"
+                        }
+                      }
+                    ],
+                    "startTimeUnixNano": "1676198991085130499",
+                    "timeUnixNano": "1676200131089555764",
+                    "asInt": "0"
+                  },
+                  {
+                    "attributes": [
+                      {
+                        "key": "pool",
+                        "value": {
+                          "stringValue": "G1 Old Gen"
+                        }
+                      },
+                      {
+                        "key": "type",
+                        "value": {
+                          "stringValue": "heap"
+                        }
+                      }
+                    ],
+                    "startTimeUnixNano": "1676198991085130499",
+                    "timeUnixNano": "1676200131089555764",
+                    "asInt": "232783872"
+                  },
+                  {
+                    "attributes": [
+                      {
+                        "key": "pool",
+                        "value": {
+                          "stringValue": "G1 Eden Space"
+                        }
+                      },
+                      {
+                        "key": "type",
+                        "value": {
+                          "stringValue": "heap"
+                        }
+                      }
+                    ],
+                    "startTimeUnixNano": "1676198991085130499",
+                    "timeUnixNano": "1676200131089555764",
+                    "asInt": "25165824"
+                  }
+                ],
+                "aggregationTemporality": 2
+              }
+            },
+            {
+              "name": "process.runtime.jvm.system.cpu.load_1m",
+              "description": "Average CPU load of the whole system for the last minute",
+              "unit": "1",
+              "gauge": {
+                "dataPoints": [
+                  {
+                    "startTimeUnixNano": "1676198991085130499",
+                    "timeUnixNano": "1676200131089555764",
+                    "asDouble": 10.7666015625
+                  }
+                ]
+              }
+            },
+            {
+              "name": "process.runtime.jvm.system.cpu.utilization",
+              "description": "Recent cpu utilization for the whole system",
+              "unit": "1",
+              "gauge": {
+                "dataPoints": [
+                  {
+                    "startTimeUnixNano": "1676198991085130499",
+                    "timeUnixNano": "1676200131089555764",
+                    "asDouble": 0.5805424135162599
+                  }
+                ]
+              }
+            },
+            {
+              "name": "process.runtime.jvm.buffer.usage",
+              "description": "Memory that the Java virtual machine is using for this buffer pool",
+              "unit": "By",
+              "sum": {
+                "dataPoints": [
+                  {
+                    "attributes": [
+                      {
+                        "key": "pool",
+                        "value": {
+                          "stringValue": "mapped - 'non-volatile memory'"
+                        }
+                      }
+                    ],
+                    "startTimeUnixNano": "1676198991085130499",
+                    "timeUnixNano": "1676200131089555764",
+                    "asInt": "0"
+                  },
+                  {
+                    "attributes": [
+                      {
+                        "key": "pool",
+                        "value": {
+                          "stringValue": "mapped"
+                        }
+                      }
+                    ],
+                    "startTimeUnixNano": "1676198991085130499",
+                    "timeUnixNano": "1676200131089555764",
+                    "asInt": "0"
+                  },
+                  {
+                    "attributes": [
+                      {
+                        "key": "pool",
+                        "value": {
+                          "stringValue": "direct"
+                        }
+                      }
+                    ],
+                    "startTimeUnixNano": "1676198991085130499",
+                    "timeUnixNano": "1676200131089555764",
+                    "asInt": "614435"
+                  }
+                ],
+                "aggregationTemporality": 2
+              }
+            },
+            {
+              "name": "process.runtime.jvm.memory.usage_after_last_gc",
+              "description": "Measure of memory used after the most recent garbage collection event on this pool",
+              "unit": "By",
+              "sum": {
+                "dataPoints": [
+                  {
+                    "attributes": [
+                      {
+                        "key": "pool",
+                        "value": {
+                          "stringValue": "G1 Survivor Space"
+                        }
+                      },
+                      {
+                        "key": "type",
+                        "value": {
+                          "stringValue": "heap"
+                        }
+                      }
+                    ],
+                    "startTimeUnixNano": "1676198991085130499",
+                    "timeUnixNano": "1676200131089555764",
+                    "asInt": "5416888"
+                  },
+                  {
+                    "attributes": [
+                      {
+                        "key": "pool",
+                        "value": {
+                          "stringValue": "G1 Old Gen"
+                        }
+                      },
+                      {
+                        "key": "type",
+                        "value": {
+                          "stringValue": "heap"
+                        }
+                      }
+                    ],
+                    "startTimeUnixNano": "1676198991085130499",
+                    "timeUnixNano": "1676200131089555764",
+                    "asInt": "22887424"
+                  },
+                  {
+                    "attributes": [
+                      {
+                        "key": "pool",
+                        "value": {
+                          "stringValue": "G1 Eden Space"
+                        }
+                      },
+                      {
+                        "key": "type",
+                        "value": {
+                          "stringValue": "heap"
+                        }
+                      }
+                    ],
+                    "startTimeUnixNano": "1676198991085130499",
+                    "timeUnixNano": "1676200131089555764",
+                    "asInt": "0"
+                  }
+                ],
+                "aggregationTemporality": 2
+              }
+            },
+            {
+              "name": "process.runtime.jvm.buffer.limit",
+              "description": "Total capacity of the buffers in this pool",
+              "unit": "By",
+              "sum": {
+                "dataPoints": [
+                  {
+                    "attributes": [
+                      {
+                        "key": "pool",
+                        "value": {
+                          "stringValue": "mapped - 'non-volatile memory'"
+                        }
+                      }
+                    ],
+                    "startTimeUnixNano": "1676198991085130499",
+                    "timeUnixNano": "1676200131089555764",
+                    "asInt": "0"
+                  },
+                  {
+                    "attributes": [
+                      {
+                        "key": "pool",
+                        "value": {
+                          "stringValue": "mapped"
+                        }
+                      }
+                    ],
+                    "startTimeUnixNano": "1676198991085130499",
+                    "timeUnixNano": "1676200131089555764",
+                    "asInt": "0"
+                  },
+                  {
+                    "attributes": [
+                      {
+                        "key": "pool",
+                        "value": {
+                          "stringValue": "direct"
+                        }
+                      }
+                    ],
+                    "startTimeUnixNano": "1676198991085130499",
+                    "timeUnixNano": "1676200131089555764",
+                    "asInt": "614434"
+                  }
+                ],
+                "aggregationTemporality": 2
+              }
+            },
+            {
+              "name": "process.runtime.jvm.cpu.utilization",
+              "description": "Recent cpu utilization for the process",
+              "unit": "1",
+              "gauge": {
+                "dataPoints": [
+                  {
+                    "startTimeUnixNano": "1676198991085130499",
+                    "timeUnixNano": "1676200131089555764",
+                    "asDouble": 0.00006981680071492404
+                  }
+                ]
+              }
+            },
+            {
+              "name": "process.runtime.jvm.memory.committed",
+              "description": "Measure of memory committed",
+              "unit": "By",
+              "sum": {
+                "dataPoints": [
+                  {
+                    "attributes": [
+                      {
+                        "key": "pool",
+                        "value": {
+                          "stringValue": "CodeHeap 'profiled nmethods'"
+                        }
+                      },
+                      {
+                        "key": "type",
+                        "value": {
+                          "stringValue": "non_heap"
+                        }
+                      }
+                    ],
+                    "startTimeUnixNano": "1676198991085130499",
+                    "timeUnixNano": "1676200131089555764",
+                    "asInt": "12124160"
+                  },
+                  {
+                    "attributes": [
+                      {
+                        "key": "pool",
+                        "value": {
+                          "stringValue": "CodeHeap 'non-nmethods'"
+                        }
+                      },
+                      {
+                        "key": "type",
+                        "value": {
+                          "stringValue": "non_heap"
+                        }
+                      }
+                    ],
+                    "startTimeUnixNano": "1676198991085130499",
+                    "timeUnixNano": "1676200131089555764",
+                    "asInt": "2555904"
+                  },
+                  {
+                    "attributes": [
+                      {
+                        "key": "pool",
+                        "value": {
+                          "stringValue": "Compressed Class Space"
+                        }
+                      },
+                      {
+                        "key": "type",
+                        "value": {
+                          "stringValue": "non_heap"
+                        }
+                      }
+                    ],
+                    "startTimeUnixNano": "1676198991085130499",
+                    "timeUnixNano": "1676200131089555764",
+                    "asInt": "7143424"
+                  },
+                  {
+                    "attributes": [
+                      {
+                        "key": "pool",
+                        "value": {
+                          "stringValue": "CodeHeap 'non-profiled nmethods'"
+                        }
+                      },
+                      {
+                        "key": "type",
+                        "value": {
+                          "stringValue": "non_heap"
+                        }
+                      }
+                    ],
+                    "startTimeUnixNano": "1676198991085130499",
+                    "timeUnixNano": "1676200131089555764",
+                    "asInt": "3276800"
+                  },
+                  {
+                    "attributes": [
+                      {
+                        "key": "pool",
+                        "value": {
+                          "stringValue": "G1 Survivor Space"
+                        }
+                      },
+                      {
+                        "key": "type",
+                        "value": {
+                          "stringValue": "heap"
+                        }
+                      }
+                    ],
+                    "startTimeUnixNano": "1676198991085130499",
+                    "timeUnixNano": "1676200131089555764",
+                    "asInt": "6291456"
+                  },
+                  {
+                    "attributes": [
+                      {
+                        "key": "pool",
+                        "value": {
+                          "stringValue": "Metaspace"
+                        }
+                      },
+                      {
+                        "key": "type",
+                        "value": {
+                          "stringValue": "non_heap"
+                        }
+                      }
+                    ],
+                    "startTimeUnixNano": "1676198991085130499",
+                    "timeUnixNano": "1676200131089555764",
+                    "asInt": "53346304"
+                  },
+                  {
+                    "attributes": [
+                      {
+                        "key": "pool",
+                        "value": {
+                          "stringValue": "G1 Old Gen"
+                        }
+                      },
+                      {
+                        "key": "type",
+                        "value": {
+                          "stringValue": "heap"
+                        }
+                      }
+                    ],
+                    "startTimeUnixNano": "1676198991085130499",
+                    "timeUnixNano": "1676200131089555764",
+                    "asInt": "48234496"
+                  },
+                  {
+                    "attributes": [
+                      {
+                        "key": "pool",
+                        "value": {
+                          "stringValue": "G1 Eden Space"
+                        }
+                      },
+                      {
+                        "key": "type",
+                        "value": {
+                          "stringValue": "heap"
+                        }
+                      }
+                    ],
+                    "startTimeUnixNano": "1676198991085130499",
+                    "timeUnixNano": "1676200131089555764",
+                    "asInt": "71303168"
+                  }
+                ],
+                "aggregationTemporality": 2
+              }
+            },
+            {
+              "name": "process.runtime.jvm.classes.current_loaded",
+              "description": "Number of classes currently loaded",
+              "unit": "1",
+              "sum": {
+                "dataPoints": [
+                  {
+                    "startTimeUnixNano": "1676198991085130499",
+                    "timeUnixNano": "1676200131089555764",
+                    "asInt": "10846"
+                  }
+                ],
+                "aggregationTemporality": 2
+              }
+            },
+            {
+              "name": "process.runtime.jvm.memory.usage",
+              "description": "Measure of memory used",
+              "unit": "By",
+              "sum": {
+                "dataPoints": [
+                  {
+                    "attributes": [
+                      {
+                        "key": "pool",
+                        "value": {
+                          "stringValue": "CodeHeap 'profiled nmethods'"
+                        }
+                      },
+                      {
+                        "key": "type",
+                        "value": {
+                          "stringValue": "non_heap"
+                        }
+                      }
+                    ],
+                    "startTimeUnixNano": "1676198991085130499",
+                    "timeUnixNano": "1676200131089555764",
+                    "asInt": "11515136"
+                  },
+                  {
+                    "attributes": [
+                      {
+                        "key": "pool",
+                        "value": {
+                          "stringValue": "CodeHeap 'non-nmethods'"
+                        }
+                      },
+                      {
+                        "key": "type",
+                        "value": {
+                          "stringValue": "non_heap"
+                        }
+                      }
+                    ],
+                    "startTimeUnixNano": "1676198991085130499",
+                    "timeUnixNano": "1676200131089555764",
+                    "asInt": "1353088"
+                  },
+                  {
+                    "attributes": [
+                      {
+                        "key": "pool",
+                        "value": {
+                          "stringValue": "Compressed Class Space"
+                        }
+                      },
+                      {
+                        "key": "type",
+                        "value": {
+                          "stringValue": "non_heap"
+                        }
+                      }
+                    ],
+                    "startTimeUnixNano": "1676198991085130499",
+                    "timeUnixNano": "1676200131089555764",
+                    "asInt": "6823456"
+                  },
+                  {
+                    "attributes": [
+                      {
+                        "key": "pool",
+                        "value": {
+                          "stringValue": "CodeHeap 'non-profiled nmethods'"
+                        }
+                      },
+                      {
+                        "key": "type",
+                        "value": {
+                          "stringValue": "non_heap"
+                        }
+                      }
+                    ],
+                    "startTimeUnixNano": "1676198991085130499",
+                    "timeUnixNano": "1676200131089555764",
+                    "asInt": "3260288"
+                  },
+                  {
+                    "attributes": [
+                      {
+                        "key": "pool",
+                        "value": {
+                          "stringValue": "G1 Survivor Space"
+                        }
+                      },
+                      {
+                        "key": "type",
+                        "value": {
+                          "stringValue": "heap"
+                        }
+                      }
+                    ],
+                    "startTimeUnixNano": "1676198991085130499",
+                    "timeUnixNano": "1676200131089555764",
+                    "asInt": "5416888"
+                  },
+                  {
+                    "attributes": [
+                      {
+                        "key": "pool",
+                        "value": {
+                          "stringValue": "Metaspace"
+                        }
+                      },
+                      {
+                        "key": "type",
+                        "value": {
+                          "stringValue": "non_heap"
+                        }
+                      }
+                    ],
+                    "startTimeUnixNano": "1676198991085130499",
+                    "timeUnixNano": "1676200131089555764",
+                    "asInt": "52763008"
+                  },
+                  {
+                    "attributes": [
+                      {
+                        "key": "pool",
+                        "value": {
+                          "stringValue": "G1 Old Gen"
+                        }
+                      },
+                      {
+                        "key": "type",
+                        "value": {
+                          "stringValue": "heap"
+                        }
+                      }
+                    ],
+                    "startTimeUnixNano": "1676198991085130499",
+                    "timeUnixNano": "1676200131089555764",
+                    "asInt": "26046464"
+                  },
+                  {
+                    "attributes": [
+                      {
+                        "key": "pool",
+                        "value": {
+                          "stringValue": "G1 Eden Space"
+                        }
+                      },
+                      {
+                        "key": "type",
+                        "value": {
+                          "stringValue": "heap"
+                        }
+                      }
+                    ],
+                    "startTimeUnixNano": "1676198991085130499",
+                    "timeUnixNano": "1676200131089555764",
+                    "asInt": "56623104"
+                  }
+                ],
+                "aggregationTemporality": 2
+              }
+            },
+            {
+              "name": "process.runtime.jvm.classes.unloaded",
+              "description": "Number of classes unloaded since JVM start",
+              "unit": "1",
+              "sum": {
+                "dataPoints": [
+                  {
+                    "startTimeUnixNano": "1676198991085130499",
+                    "timeUnixNano": "1676200131089555764",
+                    "asInt": "1"
+                  }
+                ],
+                "aggregationTemporality": 2,
+                "isMonotonic": true
+              }
+            },
+            {
+              "name": "process.runtime.jvm.buffer.count",
+              "description": "The number of buffers in the pool",
+              "unit": "{buffers}",
+              "sum": {
+                "dataPoints": [
+                  {
+                    "attributes": [
+                      {
+                        "key": "pool",
+                        "value": {
+                          "stringValue": "mapped - 'non-volatile memory'"
+                        }
+                      }
+                    ],
+                    "startTimeUnixNano": "1676198991085130499",
+                    "timeUnixNano": "1676200131089555764",
+                    "asInt": "0"
+                  },
+                  {
+                    "attributes": [
+                      {
+                        "key": "pool",
+                        "value": {
+                          "stringValue": "mapped"
+                        }
+                      }
+                    ],
+                    "startTimeUnixNano": "1676198991085130499",
+                    "timeUnixNano": "1676200131089555764",
+                    "asInt": "0"
+                  },
+                  {
+                    "attributes": [
+                      {
+                        "key": "pool",
+                        "value": {
+                          "stringValue": "direct"
+                        }
+                      }
+                    ],
+                    "startTimeUnixNano": "1676198991085130499",
+                    "timeUnixNano": "1676200131089555764",
+                    "asInt": "18"
+                  }
+                ],
+                "aggregationTemporality": 2
+              }
+            },
+            {
+              "name": "process.runtime.jvm.classes.loaded",
+              "description": "Number of classes loaded since JVM start",
+              "unit": "1",
+              "sum": {
+                "dataPoints": [
+                  {
+                    "startTimeUnixNano": "1676198991085130499",
+                    "timeUnixNano": "1676200131089555764",
+                    "asInt": "10847"
+                  }
+                ],
+                "aggregationTemporality": 2,
+                "isMonotonic": true
+              }
+            },
+            {
+              "name": "process.runtime.jvm.threads.count",
+              "description": "Number of executing threads",
+              "unit": "1",
+              "sum": {
+                "dataPoints": [
+                  {
+                    "attributes": [
+                      {
+                        "key": "daemon",
+                        "value": {
+                          "boolValue": true
+                        }
+                      }
+                    ],
+                    "startTimeUnixNano": "1676198991085130499",
+                    "timeUnixNano": "1676200131089555764",
+                    "asInt": "16"
+                  },
+                  {
+                    "attributes": [
+                      {
+                        "key": "daemon",
+                        "value": {
+                          "boolValue": false
+                        }
+                      }
+                    ],
+                    "startTimeUnixNano": "1676198991085130499",
+                    "timeUnixNano": "1676200131089555764",
+                    "asInt": "3"
+                  }
+                ],
+                "aggregationTemporality": 2
+              }
+            }
+          ]
+        },
+        {
+          "scope": {
+            "name": "io.opentelemetry.jmx"
+          },
+          "metrics": [
+            {
+              "name": "jvm.memory.heap.pool.used",
+              "description": "The current heap pool size",
+              "unit": "By",
+              "sum": {
+                "dataPoints": [
+                  {
+                    "attributes": [
+                      {
+                        "key": "name",
+                        "value": {
+                          "stringValue": "G1 Old Gen"
+                        }
+                      },
+                      {
+                        "key": "pool",
+                        "value": {
+                          "stringValue": "G1 Old Gen"
+                        }
+                      },
+                      {
+                        "key": "type",
+                        "value": {
+                          "stringValue": "HEAP"
+                        }
+                      }
+                    ],
+                    "startTimeUnixNano": "1676198991085130499",
+                    "timeUnixNano": "1676200131089555764",
+                    "asInt": "26046464"
+                  },
+                  {
+                    "attributes": [
+                      {
+                        "key": "name",
+                        "value": {
+                          "stringValue": "Metaspace"
+                        }
+                      },
+                      {
+                        "key": "pool",
+                        "value": {
+                          "stringValue": "Metaspace"
+                        }
+                      },
+                      {
+                        "key": "type",
+                        "value": {
+                          "stringValue": "NON_HEAP"
+                        }
+                      }
+                    ],
+                    "startTimeUnixNano": "1676198991085130499",
+                    "timeUnixNano": "1676200131089555764",
+                    "asInt": "52759912"
+                  },
+                  {
+                    "attributes": [
+                      {
+                        "key": "name",
+                        "value": {
+                          "stringValue": "CodeHeap 'non-nmethods'"
+                        }
+                      },
+                      {
+                        "key": "pool",
+                        "value": {
+                          "stringValue": "CodeHeap 'non-nmethods'"
+                        }
+                      },
+                      {
+                        "key": "type",
+                        "value": {
+                          "stringValue": "NON_HEAP"
+                        }
+                      }
+                    ],
+                    "startTimeUnixNano": "1676198991085130499",
+                    "timeUnixNano": "1676200131089555764",
+                    "asInt": "1353088"
+                  },
+                  {
+                    "attributes": [
+                      {
+                        "key": "name",
+                        "value": {
+                          "stringValue": "Compressed Class Space"
+                        }
+                      },
+                      {
+                        "key": "pool",
+                        "value": {
+                          "stringValue": "Compressed Class Space"
+                        }
+                      },
+                      {
+                        "key": "type",
+                        "value": {
+                          "stringValue": "NON_HEAP"
+                        }
+                      }
+                    ],
+                    "startTimeUnixNano": "1676198991085130499",
+                    "timeUnixNano": "1676200131089555764",
+                    "asInt": "6823456"
+                  },
+                  {
+                    "attributes": [
+                      {
+                        "key": "name",
+                        "value": {
+                          "stringValue": "G1 Survivor Space"
+                        }
+                      },
+                      {
+                        "key": "pool",
+                        "value": {
+                          "stringValue": "G1 Survivor Space"
+                        }
+                      },
+                      {
+                        "key": "type",
+                        "value": {
+                          "stringValue": "HEAP"
+                        }
+                      }
+                    ],
+                    "startTimeUnixNano": "1676198991085130499",
+                    "timeUnixNano": "1676200131089555764",
+                    "asInt": "5416888"
+                  },
+                  {
+                    "attributes": [
+                      {
+                        "key": "name",
+                        "value": {
+                          "stringValue": "CodeHeap 'profiled nmethods'"
+                        }
+                      },
+                      {
+                        "key": "pool",
+                        "value": {
+                          "stringValue": "CodeHeap 'profiled nmethods'"
+                        }
+                      },
+                      {
+                        "key": "type",
+                        "value": {
+                          "stringValue": "NON_HEAP"
+                        }
+                      }
+                    ],
+                    "startTimeUnixNano": "1676198991085130499",
+                    "timeUnixNano": "1676200131089555764",
+                    "asInt": "11511040"
+                  },
+                  {
+                    "attributes": [
+                      {
+                        "key": "name",
+                        "value": {
+                          "stringValue": "G1 Eden Space"
+                        }
+                      },
+                      {
+                        "key": "pool",
+                        "value": {
+                          "stringValue": "G1 Eden Space"
+                        }
+                      },
+                      {
+                        "key": "type",
+                        "value": {
+                          "stringValue": "HEAP"
+                        }
+                      }
+                    ],
+                    "startTimeUnixNano": "1676198991085130499",
+                    "timeUnixNano": "1676200131089555764",
+                    "asInt": "56623104"
+                  },
+                  {
+                    "attributes": [
+                      {
+                        "key": "name",
+                        "value": {
+                          "stringValue": "CodeHeap 'non-profiled nmethods'"
+                        }
+                      },
+                      {
+                        "key": "pool",
+                        "value": {
+                          "stringValue": "CodeHeap 'non-profiled nmethods'"
+                        }
+                      },
+                      {
+                        "key": "type",
+                        "value": {
+                          "stringValue": "NON_HEAP"
+                        }
+                      }
+                    ],
+                    "startTimeUnixNano": "1676198991085130499",
+                    "timeUnixNano": "1676200131089555764",
+                    "asInt": "3259520"
+                  }
+                ],
+                "aggregationTemporality": 2
+              }
+            },
+            {
+              "name": "jvm.gc.count",
+              "description": "CollectionCount",
+              "unit": "1",
+              "sum": {
+                "dataPoints": [
+                  {
+                    "attributes": [
+                      {
+                        "key": "collector",
+                        "value": {
+                          "stringValue": "G1 Young Generation"
+                        }
+                      },
+                      {
+                        "key": "name",
+                        "value": {
+                          "stringValue": "G1 Young Generation"
+                        }
+                      }
+                    ],
+                    "startTimeUnixNano": "1676198991085130499",
+                    "timeUnixNano": "1676200131089555764",
+                    "asInt": "16"
+                  },
+                  {
+                    "attributes": [
+                      {
+                        "key": "collector",
+                        "value": {
+                          "stringValue": "G1 Old Generation"
+                        }
+                      },
+                      {
+                        "key": "name",
+                        "value": {
+                          "stringValue": "G1 Old Generation"
+                        }
+                      }
+                    ],
+                    "startTimeUnixNano": "1676198991085130499",
+                    "timeUnixNano": "1676200131089555764",
+                    "asInt": "0"
+                  }
+                ],
+                "aggregationTemporality": 2,
+                "isMonotonic": true
+              }
+            },
+            {
+              "name": "jvm.memory.heap.used",
+              "description": "The current heap size",
+              "unit": "By",
+              "sum": {
+                "dataPoints": [
+                  {
+                    "startTimeUnixNano": "1676198991085130499",
+                    "timeUnixNano": "1676200131089555764",
+                    "asInt": "88086456"
+                  }
+                ],
+                "aggregationTemporality": 2
+              }
+            },
+            {
+              "name": "jvm.memory.heap.pool.max",
+              "description": "The max heap pool size",
+              "unit": "By",
+              "sum": {
+                "dataPoints": [
+                  {
+                    "attributes": [
+                      {
+                        "key": "name",
+                        "value": {
+                          "stringValue": "G1 Old Gen"
+                        }
+                      },
+                      {
+                        "key": "pool",
+                        "value": {
+                          "stringValue": "G1 Old Gen"
+                        }
+                      },
+                      {
+                        "key": "type",
+                        "value": {
+                          "stringValue": "HEAP"
+                        }
+                      }
+                    ],
+                    "startTimeUnixNano": "1676198991085130499",
+                    "timeUnixNano": "1676200131089555764",
+                    "asInt": "4127195136"
+                  },
+                  {
+                    "attributes": [
+                      {
+                        "key": "name",
+                        "value": {
+                          "stringValue": "Metaspace"
+                        }
+                      },
+                      {
+                        "key": "pool",
+                        "value": {
+                          "stringValue": "Metaspace"
+                        }
+                      },
+                      {
+                        "key": "type",
+                        "value": {
+                          "stringValue": "NON_HEAP"
+                        }
+                      }
+                    ],
+                    "startTimeUnixNano": "1676198991085130499",
+                    "timeUnixNano": "1676200131089555764",
+                    "asInt": "-1"
+                  },
+                  {
+                    "attributes": [
+                      {
+                        "key": "name",
+                        "value": {
+                          "stringValue": "CodeHeap 'non-nmethods'"
+                        }
+                      },
+                      {
+                        "key": "pool",
+                        "value": {
+                          "stringValue": "CodeHeap 'non-nmethods'"
+                        }
+                      },
+                      {
+                        "key": "type",
+                        "value": {
+                          "stringValue": "NON_HEAP"
+                        }
+                      }
+                    ],
+                    "startTimeUnixNano": "1676198991085130499",
+                    "timeUnixNano": "1676200131089555764",
+                    "asInt": "5840896"
+                  },
+                  {
+                    "attributes": [
+                      {
+                        "key": "name",
+                        "value": {
+                          "stringValue": "Compressed Class Space"
+                        }
+                      },
+                      {
+                        "key": "pool",
+                        "value": {
+                          "stringValue": "Compressed Class Space"
+                        }
+                      },
+                      {
+                        "key": "type",
+                        "value": {
+                          "stringValue": "NON_HEAP"
+                        }
+                      }
+                    ],
+                    "startTimeUnixNano": "1676198991085130499",
+                    "timeUnixNano": "1676200131089555764",
+                    "asInt": "1073741824"
+                  },
+                  {
+                    "attributes": [
+                      {
+                        "key": "name",
+                        "value": {
+                          "stringValue": "G1 Survivor Space"
+                        }
+                      },
+                      {
+                        "key": "pool",
+                        "value": {
+                          "stringValue": "G1 Survivor Space"
+                        }
+                      },
+                      {
+                        "key": "type",
+                        "value": {
+                          "stringValue": "HEAP"
+                        }
+                      }
+                    ],
+                    "startTimeUnixNano": "1676198991085130499",
+                    "timeUnixNano": "1676200131089555764",
+                    "asInt": "-1"
+                  },
+                  {
+                    "attributes": [
+                      {
+                        "key": "name",
+                        "value": {
+                          "stringValue": "CodeHeap 'profiled nmethods'"
+                        }
+                      },
+                      {
+                        "key": "pool",
+                        "value": {
+                          "stringValue": "CodeHeap 'profiled nmethods'"
+                        }
+                      },
+                      {
+                        "key": "type",
+                        "value": {
+                          "stringValue": "NON_HEAP"
+                        }
+                      }
+                    ],
+                    "startTimeUnixNano": "1676198991085130499",
+                    "timeUnixNano": "1676200131089555764",
+                    "asInt": "122908672"
+                  },
+                  {
+                    "attributes": [
+                      {
+                        "key": "name",
+                        "value": {
+                          "stringValue": "G1 Eden Space"
+                        }
+                      },
+                      {
+                        "key": "pool",
+                        "value": {
+                          "stringValue": "G1 Eden Space"
+                        }
+                      },
+                      {
+                        "key": "type",
+                        "value": {
+                          "stringValue": "HEAP"
+                        }
+                      }
+                    ],
+                    "startTimeUnixNano": "1676198991085130499",
+                    "timeUnixNano": "1676200131089555764",
+                    "asInt": "-1"
+                  },
+                  {
+                    "attributes": [
+                      {
+                        "key": "name",
+                        "value": {
+                          "stringValue": "CodeHeap 'non-profiled nmethods'"
+                        }
+                      },
+                      {
+                        "key": "pool",
+                        "value": {
+                          "stringValue": "CodeHeap 'non-profiled nmethods'"
+                        }
+                      },
+                      {
+                        "key": "type",
+                        "value": {
+                          "stringValue": "NON_HEAP"
+                        }
+                      }
+                    ],
+                    "startTimeUnixNano": "1676198991085130499",
+                    "timeUnixNano": "1676200131089555764",
+                    "asInt": "122908672"
+                  }
+                ],
+                "aggregationTemporality": 2
+              }
+            },
+            {
+              "name": "jvm.memory.non_heap.used",
+              "description": "The current non heap size",
+              "unit": "By",
+              "sum": {
+                "dataPoints": [
+                  {
+                    "startTimeUnixNano": "1676198991085130499",
+                    "timeUnixNano": "1676200131089555764",
+                    "asInt": "75707016"
+                  }
+                ],
+                "aggregationTemporality": 2
+              }
+            },
+            {
+              "name": "jvm.memory.non_heap.max",
+              "description": "The max non heap size",
+              "unit": "By",
+              "sum": {
+                "dataPoints": [
+                  {
+                    "startTimeUnixNano": "1676198991085130499",
+                    "timeUnixNano": "1676200131089555764",
+                    "asInt": "-1"
+                  }
+                ],
+                "aggregationTemporality": 2
+              }
+            },
+            {
+              "name": "jvm.gc.count",
+              "description": "CollectionTime",
+              "unit": "ms",
+              "sum": {
+                "dataPoints": [
+                  {
+                    "attributes": [
+                      {
+                        "key": "collector",
+                        "value": {
+                          "stringValue": "G1 Young Generation"
+                        }
+                      },
+                      {
+                        "key": "name",
+                        "value": {
+                          "stringValue": "G1 Young Generation"
+                        }
+                      }
+                    ],
+                    "startTimeUnixNano": "1676198991085130499",
+                    "timeUnixNano": "1676200131089555764",
+                    "asInt": "48"
+                  },
+                  {
+                    "attributes": [
+                      {
+                        "key": "collector",
+                        "value": {
+                          "stringValue": "G1 Old Generation"
+                        }
+                      },
+                      {
+                        "key": "name",
+                        "value": {
+                          "stringValue": "G1 Old Generation"
+                        }
+                      }
+                    ],
+                    "startTimeUnixNano": "1676198991085130499",
+                    "timeUnixNano": "1676200131089555764",
+                    "asInt": "0"
+                  }
+                ],
+                "aggregationTemporality": 2,
+                "isMonotonic": true
+              }
+            },
+            {
+              "name": "jvm.memory.heap.max",
+              "description": "The max heap size",
+              "unit": "By",
+              "sum": {
+                "dataPoints": [
+                  {
+                    "startTimeUnixNano": "1676198991085130499",
+                    "timeUnixNano": "1676200131089555764",
+                    "asInt": "4127195136"
+                  }
+                ],
+                "aggregationTemporality": 2
+              }
+            },
+            {
+              "name": "jvm.thread.count",
+              "description": "ThreadCount",
+              "unit": "1",
+              "sum": {
+                "dataPoints": [
+                  {
+                    "startTimeUnixNano": "1676198991085130499",
+                    "timeUnixNano": "1676200131089555764",
+                    "asInt": "19"
+                  }
+                ],
+                "aggregationTemporality": 2
+              }
+            }
+          ]
+        }
+      ],
+      "schemaUrl": "https://opentelemetry.io/schemas/1.16.0"
+    }
+  ]
+}

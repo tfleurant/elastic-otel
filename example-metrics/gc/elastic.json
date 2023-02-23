@@ -1,0 +1,166 @@
+{
+  "_index": ".ds-metrics-apm.internal-default-2023.02.12-000002",
+  "_id": "mX2geYYB_j1NApMmusjW",
+  "_version": 1,
+  "_score": 0,
+  "_source": {
+    "agent": {
+      "name": "java",
+      "ephemeral_id": "ec353be8-e6d9-4d13-b23c-6bd5836c9ada",
+      "version": "1.36.0"
+    },
+    "process": {
+      "pid": 1,
+      "title": "/opt/java/openjdk/bin/java"
+    },
+    "data_stream.namespace": "default",
+    "jvm.gc.time": 77,
+    "data_stream.type": "metrics",
+    "processor": {
+      "name": "metric",
+      "event": "metric"
+    },
+    "labels": {
+      "name": "G1 Young Generation"
+    },
+    "metricset.name": "app",
+    "observer": {
+      "hostname": "8af517cc6190",
+      "type": "apm-server",
+      "version": "8.6.0"
+    },
+    "@timestamp": "2023-02-22T14:56:51.143Z",
+    "service": {
+      "node": {
+        "name": "3685d8c7bda0"
+      },
+      "name": "app-with-elastic",
+      "runtime": {
+        "name": "Java",
+        "version": "17.0.6"
+      },
+      "language": {
+        "name": "Java",
+        "version": "17.0.6"
+      }
+    },
+    "data_stream.dataset": "apm.internal",
+    "host": {
+      "hostname": "3685d8c7bda0",
+      "os": {
+        "platform": "Linux"
+      },
+      "ip": [
+        "172.19.0.6"
+      ],
+      "name": "3685d8c7bda0",
+      "architecture": "amd64"
+    },
+    "jvm.gc.count": 24,
+    "event": {
+      "agent_id_status": "missing",
+      "ingested": "2023-02-22T14:57:02Z"
+    }
+  },
+  "fields": {
+    "service.node.name": [
+      "3685d8c7bda0"
+    ],
+    "host.hostname": [
+      "3685d8c7bda0"
+    ],
+    "process.pid": [
+      1
+    ],
+    "service.language.name": [
+      "Java"
+    ],
+    "process.title.text": [
+      "/opt/java/openjdk/bin/java"
+    ],
+    "host.ip": [
+      "172.19.0.6"
+    ],
+    "processor.event": [
+      "metric"
+    ],
+    "agent.name": [
+      "java"
+    ],
+    "host.name": [
+      "3685d8c7bda0"
+    ],
+    "event.agent_id_status": [
+      "missing"
+    ],
+    "service.name": [
+      "app-with-elastic"
+    ],
+    "data_stream.namespace": [
+      "default"
+    ],
+    "jvm.gc.time": [
+      77
+    ],
+    "processor.name": [
+      "metric"
+    ],
+    "labels.name": [
+      "G1 Young Generation"
+    ],
+    "service.runtime.name": [
+      "Java"
+    ],
+    "service.runtime.version": [
+      "17.0.6"
+    ],
+    "observer.hostname": [
+      "8af517cc6190"
+    ],
+    "data_stream.type": [
+      "metrics"
+    ],
+    "metricset.name": [
+      "app"
+    ],
+    "host.architecture": [
+      "amd64"
+    ],
+    "event.ingested": [
+      "2023-02-22T14:57:02.000Z"
+    ],
+    "@timestamp": [
+      "2023-02-22T14:56:51.143Z"
+    ],
+    "observer.type": [
+      "apm-server"
+    ],
+    "ecs.version": [
+      "8.6.0-dev"
+    ],
+    "host.os.platform": [
+      "Linux"
+    ],
+    "observer.version": [
+      "8.6.0"
+    ],
+    "data_stream.dataset": [
+      "apm.internal"
+    ],
+    "service.language.version": [
+      "17.0.6"
+    ],
+    "jvm.gc.count": [
+      24
+    ],
+    "agent.ephemeral_id": [
+      "ec353be8-e6d9-4d13-b23c-6bd5836c9ada"
+    ],
+    "agent.version": [
+      "1.36.0"
+    ],
+    "process.title": [
+      "/opt/java/openjdk/bin/java"
+    ]
+  }
+}

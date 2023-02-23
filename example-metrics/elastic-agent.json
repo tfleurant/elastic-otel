@@ -1,0 +1,214 @@
+{
+  "_index": ".ds-metrics-apm.internal-default-2023.02.05-000001",
+  "_id": "aMN5IoYBH9e62atgvtjx",
+  "_version": 1,
+  "_score": 0,
+  "_source": {
+    "system.process.cpu.total.norm.pct": 0.017777039375311512,
+    "jvm.memory.heap.used": 56061312,
+    "agent": {
+      "name": "java",
+      "ephemeral_id": "feee4667-ffb2-4674-b86d-8b94f5a0b937",
+      "version": "1.36.0"
+    },
+    "jvm.memory.non_heap.committed": 70057984,
+    "system.cpu.total.norm.pct": 0.18690545084325558,
+    "system.process.cgroup.memory.mem.usage.bytes": 321839104,
+    "observer": {
+      "hostname": "e61e7cd41fdb",
+      "type": "apm-server",
+      "version": "8.6.0"
+    },
+    "system.process.memory.size": 9609486336,
+    "system.memory.actual.free": 1837944832,
+    "host": {
+      "hostname": "31e4c8daa6bc",
+      "os": {
+        "platform": "Linux"
+      },
+      "ip": [
+        "192.168.144.5"
+      ],
+      "name": "31e4c8daa6bc",
+      "architecture": "amd64"
+    },
+    "jvm.memory.heap.committed": 119537664,
+    "system.memory.total": 16505733120,
+    "event": {
+      "agent_id_status": "missing",
+      "ingested": "2023-02-05T16:47:29Z"
+    },
+    "jvm.thread.count": 30,
+    "jvm.memory.non_heap.used": 65197568,
+    "process": {
+      "parent": {
+        "pid": 1
+      },
+      "pid": 7,
+      "title": "/opt/java/openjdk/bin/java"
+    },
+    "jvm.memory.heap.max": 4127195136,
+    "jvm.gc.alloc": 24279376,
+    "data_stream.namespace": "default",
+    "processor": {
+      "name": "metric",
+      "event": "metric"
+    },
+    "data_stream.type": "metrics",
+    "metricset.name": "app",
+    "@timestamp": "2023-02-05T16:47:23.951Z",
+    "service": {
+      "node": {
+        "name": "31e4c8daa6bc"
+      },
+      "name": "app-with-elastic",
+      "runtime": {
+        "name": "Java",
+        "version": "17.0.6"
+      },
+      "language": {
+        "name": "Java",
+        "version": "17.0.6"
+      }
+    },
+    "data_stream.dataset": "apm.internal",
+    "jvm.memory.non_heap.max": -1
+  },
+  "fields": {
+    "system.process.cpu.total.norm.pct": [
+      0.018
+    ],
+    "jvm.memory.heap.used": [
+      56061312
+    ],
+    "jvm.memory.non_heap.committed": [
+      70057984
+    ],
+    "service.node.name": [
+      "31e4c8daa6bc"
+    ],
+    "process.parent.pid": [
+      1
+    ],
+    "host.hostname": [
+      "31e4c8daa6bc"
+    ],
+    "system.cpu.total.norm.pct": [
+      0.187
+    ],
+    "process.pid": [
+      7
+    ],
+    "service.language.name": [
+      "Java"
+    ],
+    "process.title.text": [
+      "/opt/java/openjdk/bin/java"
+    ],
+    "host.ip": [
+      "192.168.144.5"
+    ],
+    "system.process.cgroup.memory.mem.usage.bytes": [
+      321839104
+    ],
+    "system.process.memory.size": [
+      9609486336
+    ],
+    "processor.event": [
+      "metric"
+    ],
+    "system.memory.actual.free": [
+      1837944832
+    ],
+    "jvm.memory.heap.committed": [
+      119537664
+    ],
+    "agent.name": [
+      "java"
+    ],
+    "system.memory.total": [
+      16505733120
+    ],
+    "host.name": [
+      "31e4c8daa6bc"
+    ],
+    "event.agent_id_status": [
+      "missing"
+    ],
+    "jvm.thread.count": [
+      30
+    ],
+    "jvm.memory.non_heap.used": [
+      65197568
+    ],
+    "jvm.memory.heap.max": [
+      4127195136
+    ],
+    "service.name": [
+      "app-with-elastic"
+    ],
+    "jvm.gc.alloc": [
+      24279376
+    ],
+    "data_stream.namespace": [
+      "default"
+    ],
+    "processor.name": [
+      "metric"
+    ],
+    "service.runtime.name": [
+      "Java"
+    ],
+    "service.runtime.version": [
+      "17.0.6"
+    ],
+    "data_stream.type": [
+      "metrics"
+    ],
+    "observer.hostname": [
+      "e61e7cd41fdb"
+    ],
+    "host.architecture": [
+      "amd64"
+    ],
+    "metricset.name": [
+      "app"
+    ],
+    "event.ingested": [
+      "2023-02-05T16:47:29.000Z"
+    ],
+    "@timestamp": [
+      "2023-02-05T16:47:23.951Z"
+    ],
+    "ecs.version": [
+      "8.6.0-dev"
+    ],
+    "observer.type": [
+      "apm-server"
+    ],
+    "observer.version": [
+      "8.6.0"
+    ],
+    "host.os.platform": [
+      "Linux"
+    ],
+    "service.language.version": [
+      "17.0.6"
+    ],
+    "data_stream.dataset": [
+      "apm.internal"
+    ],
+    "jvm.memory.non_heap.max": [
+      -1
+    ],
+    "agent.ephemeral_id": [
+      "feee4667-ffb2-4674-b86d-8b94f5a0b937"
+    ],
+    "agent.version": [
+      "1.36.0"
+    ],
+    "process.title": [
+      "/opt/java/openjdk/bin/java"
+    ]
+  }
+}

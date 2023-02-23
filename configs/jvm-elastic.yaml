@@ -1,0 +1,100 @@
+rules:
+  - bean: java.lang:type=Memory
+    prefix: jvm.memory.
+    mapping:
+      HeapMemoryUsage.used:
+        metric: heap.used
+        type: updowncounter
+        desc: The current heap size
+        unit: By
+      HeapMemoryUsage.committed:
+        metric: heap.committed
+        type: updowncounter
+        desc: The committed heap size
+        unit: By
+      HeapMemoryUsage.max:
+        metric: heap.max
+        type: updowncounter # maybe gauge ?
+        desc: The max heap size
+        unit: By
+      NonHeapMemoryUsage.used:
+        metric: non_heap.used
+        type: updowncounter
+        desc: The current non heap size
+        unit: By
+      NonHeapMemoryUsage.committed:
+        metric: non_heap.committed
+        type: updowncounter
+        desc: The committed non heap size
+        unit: By
+      NonHeapMemoryUsage.max:
+        metric: non_heap.max
+        type: updowncounter # maybe gauge ?
+        desc: The max non heap size
+        unit: By
+  - bean: java.lang:name=*,type=MemoryPool
+    prefix: jvm.memory.heap.
+    metricAttribute:
+      pool: param(name)
+      name: param(name)
+      type: beanattr(Type)
+    mapping:
+      Usage.used:
+        metric: pool.used
+        type: updowncounter
+        desc: The current heap pool size
+        unit: By
+      Usage.commited:
+        metric: pool.committed
+        type: updowncounter
+        desc: The committed heap pool size
+        unit: By
+      Usage.max:
+        metric: pool.max
+        type: updowncounter # maybe gauge ?
+        desc: The max heap pool size
+        unit: By
+  - bean: java.lang:name=*,type=GarbageCollector
+    prefix: jvm.gc.
+    metricAttribute:
+      collector: param(name)
+      name: param(name)
+    mapping:
+      CollectionCount:
+        metric: count
+        type: counter
+        unit: 1
+      CollectionTime:
+        metric: time
+        type: counter
+        unit: ms
+  - bean: java.lang:type=OperatingSystem
+    prefix: system.
+    mapping:
+      SystemCpuLoad:
+        metric: cpu.total.norm.pct
+        type: gauge
+        unit: 1
+      ProcessCpuLoad:
+        metric: process.cpu.total.norm.pct
+        type: gauge
+        unit: 1
+      FreePhysicalMemorySize:
+        metric: memory.actual.free
+        type: updowncounter
+        unit: By
+      TotalPhysicalMemorySize:
+        metric: memory.total
+        type: updowncounter
+        unit: By
+      CommittedVirtualMemorySize:
+        metric: process.memory.size
+        type: updowncounter
+        unit: By
+  - bean: java.lang:type=Threading
+    mapping:
+      ThreadCount:
+        metric: jvm.thread.count
+        type: updowncounter
+        unit: 1
+

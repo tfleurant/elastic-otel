@@ -1,0 +1,36 @@
+plugins {
+//  id("scala")
+  id("java")
+}
+
+apply from: "$rootDir/gradle/instrumentation.gradle"
+
+// FIXME ?
+muzzle {
+  pass {
+    group.set("javax.servlet")
+    module.set("javax.servlet-api")
+    versions.set("[3.0,)")
+    assertInverse.set(true)
+  }
+  pass {
+    group.set("javax.servlet")
+    module.set("servlet-api")
+    versions.set("[2.2, 3.0)")
+    assertInverse.set(true)
+  }
+}
+
+dependencies {
+  compileOnly project(":bootstrap")
+  compileOnly("io.opentelemetry:opentelemetry-sdk-extension-autoconfigure:${versions.opentelemetryJavaagentAlpha}")
+//  compileOnly("io.opentelemetry.javaagent:opentelemetry-javaagent-instrumentation-api:1.13.0-alpha")
+//  compileOnly("io.opentelemetry.javaagent:opentelemetry-javaagent-extension-api:${versions.opentelemetryJavaagentAlpha}")
+//  implementation("org.scala-lang:scala3-library_3:3.2.2")
+
+//  testInstrumentation "io.opentelemetry.javaagent.instrumentation:opentelemetry-javaagent-servlet-common:${versions.opentelemetryJavaagentAlpha}"
+//  testInstrumentation "io.opentelemetry.javaagent.instrumentation:opentelemetry-javaagent-servlet-2.2:${versions.opentelemetryJavaagentAlpha}"
+//  testInstrumentation "io.opentelemetry.javaagent.instrumentation:opentelemetry-javaagent-servlet-3.0:${versions.opentelemetryJavaagentAlpha}"
+
+
+}

@@ -1,0 +1,187 @@
+{
+  "_index": ".ds-metrics-apm.internal-default-2023.02.12-000002",
+  "_id": "i32geYYB_j1NApMmhcgn",
+  "_version": 1,
+  "_score": 0,
+  "_source": {
+    "container": {
+      "id": "3685d8c7bda09fd7b39e8e68dc6d32f373ec0b5aa3d263f170c249bd752cf588"
+    },
+    "agent": {
+      "name": "opentelemetry/java",
+      "version": "1.23.1"
+    },
+    "process": {
+      "pid": 1,
+      "command_line": "/opt/java/openjdk/bin/java -Dotel.javaagent.debug=false -Dcom.sun.management.jmxremote -Dspring.jmx.enabled=true -Dspring.liveBeansView.mbeanDomain -Dspring.application.admin.enabled=true -Dmanagement.endpoints.jmx.exposure.include=* -Dcom.sun.management.jmxremote.port=9999 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false --enable-preview -javaagent:thirdparty/agent-1.0-SNAPSHOT-all.jar -javaagent:thirdparty/elastic-apm-agent.jar -Delastic.apm.service_name=app-with-elastic -Delastic.apm.application_packages=com.example -Delastic.apm.server_url=http://fleet-server:8200",
+      "executable": "/opt/java/openjdk/bin/java"
+    },
+    "data_stream.namespace": "default",
+    "jvm.gc.time": 77,
+    "data_stream.type": "metrics",
+    "processor": {
+      "name": "metric",
+      "event": "metric"
+    },
+    "labels": {
+      "process_runtime_description": "Eclipse Adoptium OpenJDK 64-Bit Server VM 17.0.6+10",
+      "name": "G1 Young Generation",
+      "custom_resource": "demo",
+      "telemetry_auto_version": "demo-1.0-SNAPSHOT-otel-1.23.0-SNAPSHOT"
+    },
+    "metricset.name": "app",
+    "observer": {
+      "hostname": "8af517cc6190",
+      "type": "apm-server",
+      "version": "8.6.0"
+    },
+    "@timestamp": "2023-02-22T14:56:45.616Z",
+    "service": {
+      "node": {
+        "name": "3685d8c7bda09fd7b39e8e68dc6d32f373ec0b5aa3d263f170c249bd752cf588"
+      },
+      "environment": "production",
+      "name": "app-otel-5",
+      "runtime": {
+        "name": "OpenJDK Runtime Environment",
+        "version": "17.0.6+10"
+      },
+      "language": {
+        "name": "java"
+      },
+      "version": "0.0.1"
+    },
+    "data_stream.dataset": "apm.internal",
+    "jvm.gc.count": 24,
+    "host": {
+      "hostname": "3685d8c7bda0",
+      "os": {
+        "type": "linux",
+        "platform": "linux",
+        "full": "Linux 5.19.0-31-generic"
+      },
+      "name": "3685d8c7bda0",
+      "architecture": "amd64"
+    },
+    "event": {
+      "agent_id_status": "missing",
+      "ingested": "2023-02-22T14:56:48Z"
+    }
+  },
+  "fields": {
+    "labels.custom_resource": [
+      "demo"
+    ],
+    "labels.process_runtime_description": [
+      "Eclipse Adoptium OpenJDK 64-Bit Server VM 17.0.6+10"
+    ],
+    "host.os.full": [
+      "Linux 5.19.0-31-generic"
+    ],
+    "service.node.name": [
+      "3685d8c7bda09fd7b39e8e68dc6d32f373ec0b5aa3d263f170c249bd752cf588"
+    ],
+    "host.hostname": [
+      "3685d8c7bda0"
+    ],
+    "process.pid": [
+      1
+    ],
+    "service.language.name": [
+      "java"
+    ],
+    "container.id": [
+      "3685d8c7bda09fd7b39e8e68dc6d32f373ec0b5aa3d263f170c249bd752cf588"
+    ],
+    "labels.telemetry_auto_version": [
+      "demo-1.0-SNAPSHOT-otel-1.23.0-SNAPSHOT"
+    ],
+    "processor.event": [
+      "metric"
+    ],
+    "agent.name": [
+      "opentelemetry/java"
+    ],
+    "host.name": [
+      "3685d8c7bda0"
+    ],
+    "event.agent_id_status": [
+      "missing"
+    ],
+    "process.executable": [
+      "/opt/java/openjdk/bin/java"
+    ],
+    "service.environment": [
+      "production"
+    ],
+    "service.name": [
+      "app-otel-5"
+    ],
+    "host.os.type": [
+      "linux"
+    ],
+    "data_stream.namespace": [
+      "default"
+    ],
+    "jvm.gc.time": [
+      77
+    ],
+    "processor.name": [
+      "metric"
+    ],
+    "labels.name": [
+      "G1 Young Generation"
+    ],
+    "service.runtime.name": [
+      "OpenJDK Runtime Environment"
+    ],
+    "service.runtime.version": [
+      "17.0.6+10"
+    ],
+    "observer.hostname": [
+      "8af517cc6190"
+    ],
+    "data_stream.type": [
+      "metrics"
+    ],
+    "metricset.name": [
+      "app"
+    ],
+    "host.architecture": [
+      "amd64"
+    ],
+    "event.ingested": [
+      "2023-02-22T14:56:48.000Z"
+    ],
+    "@timestamp": [
+      "2023-02-22T14:56:45.616Z"
+    ],
+    "service.version": [
+      "0.0.1"
+    ],
+    "observer.type": [
+      "apm-server"
+    ],
+    "ecs.version": [
+      "8.6.0-dev"
+    ],
+    "host.os.platform": [
+      "linux"
+    ],
+    "observer.version": [
+      "8.6.0"
+    ],
+    "data_stream.dataset": [
+      "apm.internal"
+    ],
+    "jvm.gc.count": [
+      24
+    ],
+    "process.command_line": [
+      "/opt/java/openjdk/bin/java -Dotel.javaagent.debug=false -Dcom.sun.management.jmxremote -Dspring.jmx.enabled=true -Dspring.liveBeansView.mbeanDomain -Dspring.application.admin.enabled=true -Dmanagement.endpoints.jmx.exposure.include=* -Dcom.sun.management.jmxremote.port=9999 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false --enable-preview -javaagent:thirdparty/agent-1.0-SNAPSHOT-all.jar -javaagent:thirdparty/elastic-apm-agent.jar -Delastic.apm.service_name=app-with-elastic -Delastic.apm.application_packages=com.example -Delastic.apm.server_url=http://fleet-server:8200"
+    ],
+    "agent.version": [
+      "1.23.1"
+    ]
+  }
+}
